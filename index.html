@@ -1,132 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>ONOFF Dance Studio</title>
-  <link rel="stylesheet" href="style.css">
-  <link rel="icon" type="image/png" href="logo.png">
-</head>
-<body>
-  <!-- HEADER -->
-  <header>
-    <nav>
-      <div class="logo-container">
-        <img src="logo.png" alt="ONOFF Logo" class="logo">
-        <h1>ONOFF Dance Studio</h1>
-      </div>
-      <ul>
-        <li><a href="#about">About</a></li>
-        <li><a href="#classes">Classes</a></li>
-        <li><a href="#gallery">Gallery</a></li>
-        <li><a href="#contact">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
+<!doctype html>
+<html lang="en" class="scroll-smooth bg-obsidian-950 text-silver selection:bg-copper selection:text-white">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/png" href="/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#060607" />
+    
+    <!-- Primary SEO Meta Tags -->
+    <title>ON OFF DANCE STUDIO (ODS) | Elite Dance Academy in Madipakkam, Chennai</title>
+    <meta name="title" content="ON OFF DANCE STUDIO (ODS) | Elite Dance Academy in Madipakkam, Chennai" />
+    <meta name="description" content="Join ON OFF DANCE STUDIO (ODS) in Madipakkam, Chennai. Professional training in Western, Classical Bharatanatyam, and Zumba for Junior, Adult, and Senior batches. Enroll today!" />
+    <meta name="keywords" content="dance studio madipakkam, dance classes chennai, western dance classes chennai, bharatanatyam madipakkam, zumba fitness madipakkam, on off dance studio, ods dance studio, dance classes for kids chennai" />
+    <meta name="author" content="ON OFF DANCE STUDIO" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://onoffdancestudio.com/" />
+    <meta property="og:title" content="ON OFF DANCE STUDIO (ODS) | Feel the Rhythm. Own the Stage." />
+    <meta property="og:description" content="Premier dance academy in Madipakkam, Chennai offering Western, Classical, and Zumba classes for all age groups." />
+    <meta property="og:image" content="/favicon.png" />
 
-  <!-- HERO / BANNER -->
-  <section class="hero">
-    <h2>Move with Passion, Dance with ONOFF 💃🕺</h2>
-    <p>Join Chennai’s most energetic dance studio and find your rhythm today!</p>
-    <button id="musicBtn">Play Music 🎶</button>
-    <audio id="bgMusic" loop>
-      <source src="music/background.mp3" type="audio/mpeg">
-    </audio>
-  </section>
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:title" content="ON OFF DANCE STUDIO (ODS) | Feel the Rhythm. Own the Stage." />
+    <meta property="twitter:description" content="Premier dance academy in Madipakkam, Chennai offering Western, Classical, and Zumba classes." />
+    <meta property="twitter:image" content="/favicon.png" />
 
-  <!-- ABOUT -->
-  <section id="about">
-    <h2>About Our Dance Studio</h2>
-    <p>
-      At <strong>Our Dance Studio</strong>, we don’t just teach dance — we create experiences! 
-      Located in the heart of Chennai, our studio is a vibrant hub for dancers of all ages and skill levels. 
-      From energetic Hip-Hop to graceful Bharatanatyam, we offer a wide range of dance styles to help you 
-      express yourself, stay fit, and build confidence.
-    </p>
-    <p>
-      Our team of professional instructors is passionate about guiding every student on their unique journey. 
-      Whether you’re a beginner finding your rhythm or an experienced dancer looking to refine your technique, 
-      ONOFF provides the perfect space to learn, perform, and shine.
-    </p>
-    <p>
-      Join our community and be part of a supportive, creative environment where every step, every move, 
-      and every performance celebrates the joy of dance!
-    </p>
-    <p><strong>Timings:</strong> 9:00 AM – 9:00 PM (All Days)</p>
-  </section>
+    <!-- Google Fonts Preconnect & Professional Luxury Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-  <!-- CLASSES -->
-  <section id="classes">
-    <h2>Our Classes</h2>
-    <div class="classes-grid">
-      <div class="class-card">
-        <h3>Hip-Hop</h3>
-        <p>High-energy dance style with rhythm, attitude, and style. Perfect for beginners and pros alike.</p>
-      </div>
-      <div class="class-card">
-        <h3>Contemporary</h3>
-        <p>Expressive dance blending ballet, modern, and jazz techniques for creative movement.</p>
-      </div>
-      <div class="class-card">
-        <h3>Salsa</h3>
-        <p>Fun, vibrant partner dance that combines rhythm, style, and fluid movements.</p>
-      </div>
-      <div class="class-card">
-        <h3>Bharatanatyam</h3>
-        <p>Classical Indian dance focusing on grace, storytelling, and intricate footwork.</p>
-      </div>
-      <div class="class-card">
-        <h3>Zumba & Fitness</h3>
-        <p>Energetic fitness dance combining fun moves, cardio, and rhythm to stay healthy.</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- GALLERY -->
-  <section id="gallery">
-    <h2>Gallery</h2>
-    <div class="gallery-grid">
-      <img src="gallery1.jpg" alt="Dance 1">
-      <img src="gallery2.jpg" alt="Dance 2">
-      <img src="gallery3.jpg" alt="Dance 3">
-      <img src="gallery4.jpg" alt="Dance 4">
-      <img src="gallery5.jpg" alt="Dance 5">
-      <img src="gallery6.jpg" alt="Dance 6">
-      <img src="gallery7.jpg" alt="Dance 7">
-      <img src="gallery8.jpg" alt="Dance 8">
-      <img src="gallery9.jpg" alt="Dance 9">
-      <img src="gallery10.jpg" alt="Dance 10">
-    </div>
-  </section>
-
-  <!-- CONTACT -->
-  <section id="contact">
-    <h2>Contact Us</h2>
-    <form id="contactForm">
-      <input type="text" id="name" placeholder="Your Name" required>
-      <input type="email" id="email" placeholder="Your Email" required>
-      <textarea id="message" rows="4" placeholder="Your Message" required></textarea>
-      <button type="submit">Send via WhatsApp</button>
-    </form>
-    <p class="thanks"></p>
-
-    <div class="contact-info">
-      <p><strong>Address:</strong> 2/52, 9th St, Moovarasanpet, Raghava Nagar, Madipakkam, Chennai, Tamil Nadu 600091</p>
-      <p><strong>Phone:</strong> <a href="tel:8870356852">88703 56852</a></p>
-    </div>
-  </section>
-
-  <!-- FOOTER -->
-  <footer>
-    <p>© 2025 ONOFF Dance Studio. All Rights Reserved.</p>
-  </footer>
-
-  <!-- LIGHTBOX -->
-  <div id="lightbox">
-    <span class="close">&times;</span>
-    <img id="lightboxImg" src="" alt="">
-  </div>
-
-  <script src="script.js"></script>
-</body>
+    <!-- Schema.org Structured Data for LocalBusiness -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "DanceStudio",
+      "name": "ON OFF DANCE STUDIO",
+      "alternateName": "ODS",
+      "image": "/favicon.png",
+      "@id": "https://onoffdancestudio.com",
+      "url": "https://onoffdancestudio.com",
+      "telephone": ["+918870356852", "+919941878870"],
+      "priceRange": "₹₹",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "2/52, Raghava Nagar 9th Street",
+        "addressLocality": "Madipakkam",
+        "addressRegion": "Tamil Nadu",
+        "postalCode": "600091",
+        "addressCountry": "IN"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": 12.9647,
+        "longitude": 80.1983
+      },
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday",
+            "Saturday",
+            "Sunday"
+          ],
+          "opens": "06:00",
+          "closes": "21:30"
+        }
+      ],
+      "sameAs": [
+        "https://instagram.com/onoffdancestudio",
+        "https://facebook.com/onoffdancestudio",
+        "https://wa.me/918870356852"
+      ]
+    }
+    </script>
+  </head>
+  <body class="bg-obsidian-950 text-silver antialiased overflow-x-hidden selection:bg-copper selection:text-white">
+    <div id="root"></div>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
